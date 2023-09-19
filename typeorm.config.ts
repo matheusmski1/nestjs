@@ -3,11 +3,11 @@ import { User } from 'src/user/entities/user.entity';
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
   type: 'postgres',
-  host: 'localhost',
+  host: 'db',
   port: 5432,
   username: 'postgres',
-  password: 'paola100',
+  password: 'postgres',
   database: 'postgres',
   entities: [User],
-  synchronize: false,
+  synchronize: true,
 };
